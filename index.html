@@ -1,16 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GPT Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Wonders: Exploring the Universe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #f0f0f0;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+                radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+            background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+            background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+            animation: backgroundScroll 60s linear infinite;
+        }
+
+        @keyframes backgroundScroll {
+            from {background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;}
+            to {background-position: 550px 550px, 590px 610px, 680px 820px, 620px 650px;}
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0066cc 3px solid;
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 3em;
+            color: #0066cc;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background: #0066cc;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .main-content {
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .space-fact {
+            background: #0066cc;
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #0066cc;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-
 <body>
-  Your blank canvas
-  <!-- insert your changes here -->
-</body>
+    <header>
+        <div class="container">
+            <h1>Cosmic Wonders: Exploring the Universe</h1>
+        </div>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Space</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="main-content">
+            <h2>Welcome to Our Space Adventure</h2>
+            <p>Embark on a journey through the cosmos, exploring the wonders of our universe. From distant galaxies to nearby planets, the mysteries of space await your discovery.</p>
+        </section>
+
+        <section id="about" class="main-content">
+            <h2>About Space</h2>
+            <p>Space, also known as the cosmos, is the vast expanse that exists beyond Earth and between celestial bodies. It's characterized by its near-perfect vacuum, containing low densities of particles, predominantly hydrogen and helium, as well as electromagnetic radiation, magnetic fields, neutrinos, cosmic rays, and dark matter.</p>
+        </section>
+
+        <section id="gallery" class="main-content">
+            <h2>Space Gallery</h2>
+            <div class="gallery">
+                <img src="https://source.unsplash.com/featured/?galaxy" alt="A stunning galaxy, swirling with stars and cosmic dust" width="200" height="200">
+                <img src="https://source.unsplash.com/featured/?planet" alt="A mysterious planet with vibrant colors and atmospheric patterns" width="200" height="200">
+                <img src="https://source.unsplash.com/featured/?nebula" alt="A colorful nebula, glowing with the birth of new stars" width="200" height="200">
+                <img src="https://source.unsplash.com/featured/?astronaut" alt="An astronaut floating in the vastness of space" width="200" height="200">
+            </div>
+        </section>
+
+        <div class="space-fact">
+            <p>Did you know? The largest known star, UY Scuti, is so big that if it were placed where our sun is, its surface would extend beyond Jupiter's orbit!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Cosmic Wonders. All rights reserved.</p>
+    </footer>
+</body>
 </html>
